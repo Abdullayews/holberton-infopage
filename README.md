@@ -1,187 +1,115 @@
-# Muhəməd Abdullayev — Portfolio
+<div align="center">
 
-> 🚀 Kompüter Mühəndisliyi tələbəsinin modern, animasiyalı və fully responsive portfolio saytı.
+# 💠 Muhəmməd Abdullayev — Portfolio
+
+**A modern, animated, fully responsive portfolio site — no frameworks, no build step, just HTML5, CSS3 and vanilla JavaScript.**
+
+[![Live site](https://img.shields.io/badge/live-holberton.my--board.org-00C896?style=for-the-badge&logo=firefox&logoColor=white)](https://holberton.my-board.org)
+[![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Variables%20%C2%B7%20Grid%20%C2%B7%20Flex-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla_ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+</div>
 
 ---
 
-## 📋 Məzmun
+## 🧭 What is this?
 
-Bu layihə **HTML5**, **CSS3** və **JavaScript (Vanilla)** istifadə edərək hazırlanmışdır. Modern dizayn, smooth animasiyalar və mobil cihazlar üçün tamamil optimallaşdırılmışdır.
-Aktiv web səhifə linki: https://holberton.my-board.org
+A personal portfolio for a **Computer Engineering student**, built the
+old-school way: **one HTML file, one CSS file, zero JavaScript frameworks**.
+No build step, no bundler — open `index.html` and it just works, anywhere.
 
-## ✨ Xüsusiyyətlər
+What it lacks in dependencies it makes up for in motion and detail: a typing
+hero with a live particle system, 3D-tilt portfolio cards, magnetic buttons,
+progress bars with a continuous shimmer, an avatar that loads with a
+clock-hand animation, and a phone-country selector covering **175+
+countries** with per-country formats. Accessibility isn't an afterthought —
+full keyboard navigation and `prefers-reduced-motion` support are built in.
 
-- ⚡ **Modern Animasiyalar**: Typing effect, particle sistemi, neon glow, saat əqrəbi loading
-- 🎨 **Responsive Dizayn**: Desktop, tablet və mobile cihazlar üçün uyğun görünüş
-- 🔥 **Interaktiv Elementlər**: 3D tilt kartlar, magnetic buttons, parallax effekti
-- 💫 **GitHub API İnteqrasiyonu**: Avtomatik profil şəkliyi yüklənir
-- 🌍 **Dinamik Telefon Seçicisi**: 175+ ölkə, A-Z sıralama, hər ölkə üçün fərqli format
-- ♿ **Accessibility**: Keyboard navigation, reduced motion dəstəyi
+> 🌐 **Live:** [holberton.my-board.org](https://holberton.my-board.org)
 
-## 🛠️ Texnologiyalar
+## ✨ Features
 
-| Kateqoriya | Texnologiya |
-|------------|-------------|
-| **Markup** | HTML5 Semantic |
-| **Styling** | CSS3 (Variables, Grid, Flexbox, Animations) |
-| **Scripting** | Vanilla JavaScript (ES6+) |
-| **Fonts** | Google Fonts (Inter) |
-| **Icons** | Inline SVG |
-| **Favicon** | GitHub Avatar API |
+- ⚡ **Modern animations** — typing effect, particle system (50+ particles), neon glow, floating orbs with parallax
+- 🎨 **Fully responsive** — desktop, tablet and mobile layouts
+- 🔥 **Interactive elements** — 3D tilt cards, magnetic buttons, scroll indicator
+- 💫 **GitHub API integration** — profile avatar pulled automatically
+- 🌍 **Dynamic phone picker** — 175+ countries, A→Z sorted, per-country phone formats
+- ♿ **Accessibility** — keyboard navigation, reduced-motion support
 
-## 📁 Fayl Strukturu
+## 📱 Page sections
+
+| Section | Highlights |
+|---|---|
+| 1️⃣ **Hero** | Typing name animation · particle field · parallax orbs · scroll indicator |
+| 2️⃣ **Portfolio** | 6 interactive cards (Git, Linux, Hyprland, Custom ROM, C#, Android) with accordion details + 3D tilt |
+| 3️⃣ **About** | Clock-hand avatar loading · animated stat counters · tech tags |
+| 4️⃣ **Skills** | Pulsing, shimmering progress bars in two tracks (Programming / Systems) |
+| 5️⃣ **Contact** | 175+ country phone picker · form validation |
+| 6️⃣ **Footer** | GitHub · Telegram · LinkedIn links |
+
+## 🎨 Design system
+
+| Token | Value |
+|---|---|
+| Background | `#080b14` (dark) |
+| Accent gradient | `#4f9eff` → `#7c3aed` (blue → purple) |
+| Neon glow | `#00f5ff` (cyan) |
+| Font | Inter (Google Fonts) — weights 600–900 |
+| Radius | `10px` · container `1080px` · navbar trigger `60px` |
+| Keyframes | `fadeInUp` · `scaleIn` · `bounceIn` · `pulseGlow` · `dotClockwise` · `shimmerContinuous` · `cursorBlink` |
+
+Everything customizable from `:root` CSS variables — swap `--accent`,
+`--bg` or `--radius` and the whole site follows.
+
+## 📁 Repository structure
 
 ```
-project/
-├── index.html          # Əsas səhifə (HTML)
-├── style.css           # Dizayn faylı (CSS)
-└── README.md           # Bu fayl (Dokumentasiya)
+holberto-infopage/
+├── index.html    # the entire page — semantic HTML5
+├── style.css     # the entire design system
+└── README.md     # this file
 ```
 
-## 🚀 Quraşdırma
+## 🚀 Installation
 
-### **Tələb olunması:**
+No build, no dependencies:
 
-1. **Repository klonlayın:**
-   ```bash
-   git clone <repository-url>
-   ```
+```bash
+git clone https://github.com/Abdullayews/holberto-infopage.git
+cd holberto-infopage
+# open index.html in any browser
+```
 
-2. **Qovluğa açın:**
-   ```bash
-   cd project
-   ```
+**Customize it:**
 
-3 Brauzerdə `index.html` faylını açın
+- **Your avatar** — replace the GitHub URL in `index.html` (`Abdullayews`) with your username
+- **Colors** — edit the `:root` variables in `style.css`
+- **Content** — edit the sections directly in `index.html`
 
-### **Redaktə etmək üçün:**
+**Deploy it:** works out of the box on GitHub Pages (Settings → Pages →
+`main` / root), Netlify (drag & drop) or Vercel (import, no build command).
 
-- **Profil şəkliyi dəyişdirin:** `index.html` içindəki GitHub URL-i (`Abdullayews`) öz profilinizlə dəyişdirin
-- **Rəngləri fərdiləşdirin:** `style.css` faylındak `:root` bölümündəki CSS dəyişənləri
-- **Məzmunu redaktə edin:** Bu README faylında mətni özəlləşdirin
+## 🌐 Browser support
 
-### **Deploy etmək üçün:**
+| Browser | Version | Status |
+|---|---|---|
+| Chrome | 90+ | ✅ Full |
+| Firefox | 88+ | ✅ Full |
+| Safari | 14+ | ✅ Full |
+| Edge | 90+ | ✅ Full |
 
-#### **GitHub Pages:**
-1. Repository-ni GitHub-a push edin
-2. Settings → Pages → Source seçin
-3. `main` branch, `/root` folder
-4. Save → Sayt avtomatik olaraq build olunacaq
+## 📄 License
 
-#### **Netlify:**
-1. [netlify.com](https://netlify.com) açın
-2. "Drag and drop" ilə `project` qovluğunu yükleyin
-3. Deploy settings: Build command boş buraxın
-4. Deploy!
+Personal project — free to learn from, remix and rebuild.
 
-#### **Vercel:**
-1. [vercel.com](https://vercel.com) açın
-2. "Import Project" düyməsinə basın
-3. Repository linkini əlavə edin
-4 → Deploy!
+## 👤 About me
 
----
+**Muhəmməd Abdullayev** — Computer Engineering student · Qarabağ University & Holberton School.
+Into privacy-focused tech, Linux, and custom Android ROMs.
 
-## 📱 Bölmələr
-
-### **1. Hero (Əsas)**
-- Typing animasiyası ilə ad
-- Particle sistemi (50+ hissəcik)
-- Floating orbs (parallax)
-- Scroll indicator
-
-### **2. Portfolio**
-- 6 interaktiv kart (Git, Linux, Hyprland, Custom ROM, C#, Android)
-- Accordion detalları
-- 3D tilt hover effekti
-
-### **3. Haqqımda**
-- Avatar: 12 nöqtə + saat əqrəbi loading animasiyası
-- Statistikalar (counter animation)
-- Cihaz/teknologiya teqləri
-
-### **4. Bacarıqlar**
-- Progress barlar (continuous pulse + shimmer)
-- 2 kateqoriya (Proqramlaşdırma, Sistem)
-- Dinamik animasiya
-
-### **5. Əlaqə**
-- Dinamik telefon seçicisi (175+ ölkə)
-- Form validasiyası
-- Real email: `abdullayev6006@gmail.com`
-- Telegram: `@arasss08`
-
-### **6. Footer**
-- GitHub, Telegram, LinkedIn linkləri
-- Copyright məlumatı
-
----
-
-## 🎨 Dizayn Sistemləri
-
-### **Rəng Palitrası:**
-- **Əsas:** Dark theme (`#080b14`)
-- **Accent:** Blue-Purple gradient (`#4f9eff` → `#7c3aed`)
-- **Glow effekt:** Cyan/Mavi neon (`#00f5ff`)
-
-### **Tipografiya:**
-- **Font:** Inter (Google Fonts)
-- **Başlıqlar:** 900 (hero), 800 (section), 600-700 (body)
-- **Line height:** 1.7 (oxuna oxşayan)
-
-### **Animasiyalar:**
-- `fadeInUp`, `scaleIn`, `bounceIn`
-- `pulseGlow`, `dotClockwise`, `continuousPulse`
-- `shimmerContinuous`
-- `cursorBlink`
-
----
-
-## 🔧 Təyin Edilə Bilənlər
-
-| Parametr | Dəyer | Qiymət |
-|---------|------|--------|
-| `--accent` | `:root` | `#4f9eff` |
-| `--bg` | `:root` | `#080b14` |
-| `--radius` | `:root` | `10px` |
-| Container width | `.container` | `1080px` max |
-| Navbar scroll trigger | `.navbar` | `60px` |
-
----
-
-## 📞 Contact Məlumatları
-
-- **E-poçt:** abdullayev6006@gmail.com
-- **Telegram:** [@arasss08](https://t.me/arasss08)
-- **GitHub:** [Abdullayews](https://github.com/Abdullayews)
-
----
-
-## 📊 Browser Dəstəyi
-
-| Browser | Versiya | Status |
-|---------|---------|--------|
-| Chrome | 90+ | ✅ Full support |
-| Firefox | 88+ | ✅ Full support |
-| Safari | 14+ | ✅ Full support |
-| Edge | 90+ | ✅ Full support |
-
----
-
-## 📱 License
-
-Bu layihə **şəxsi istifadə** üçün hazırlanmışdır. Öyrənilər, modifikasiya edə bilərsiniz.
-
----
-
-## 👨‍💻 Müəllif
-
-- **Ad:** Muhəmməd Abdullayev
-- **Status:** Kompüter Mühəndisliyi Tələbəsi
-- **Universitet:** Qarabağ Universiteti & Holberton School
-- **Maraq Dairəsi:** Privacy-focused texnologiyalar, Linux, Custom Android ROM-lar
-
----
-
-*Son yenilənmə tarixi: 2025*  
-*Versiya: 4.0 Final*
+<p>
+<a href="https://github.com/Abdullayews"><img src="https://img.shields.io/badge/GitHub-@Abdullayews-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://t.me/arasss08"><img src="https://img.shields.io/badge/Telegram-@arasss08-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
+<a href="mailto:08abdullayevv@gmail.com"><img src="https://img.shields.io/badge/Email-08abdullayevv@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
